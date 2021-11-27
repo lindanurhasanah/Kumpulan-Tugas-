@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan8</title>
+</head>
+<body>
+    <p id="textnama"> Hasil Nama</p>
+</body>
+<script>
+    var nama = prompt("Nama Anda Siapa ?");
+    document.getElementById("textnama").innerHTML =
+    "Nama :" + nama;
+</script>
+<body>
+    <p id="textkelas"> Hasil Kelas</p>
+</body>
+<script>
+    var kelas = prompt("Kelas Berapa Anda ?");
+    document.getElementById("textkelas").innerHTML =
+    "Kelas :" + kelas;
+</script>
+<body>  
+       <script>
+    function Hitung(dat1,dat2,dat3){
+        var total,totalrat;
+        total = dat1+dat2+dat3;
+      
+        totalrat = total / 3;
+        return totalrat;
+    }
+</script>
+</head>
+<body>
+<div class="box">
+        <h2 class="h2">Nilai Rata-Rata siswa</h2>
+      
+<table class="tbl1">
+    <tr>
+        <td><label>NIS</label></td>
+        <td>=</td>
+        <td><input type="text" id="NIS"></td>
+    </tr>
+    <tr>
+        <td><label>UTS</label></td>
+        <td>=</td>
+        <td><input type="text" id="UTS"></td>
+    </tr>
+    <tr>
+        <td><label>Tugas</label></td>
+        <td>=</td>
+        <td><input type="text" id="Tugas"></td>
+    </tr>
+    <tr>
+        <td><label>UAS</label></td>
+        <td>=</td>
+        <td><input type="text" id="UAS"></td>
+    </tr>
+    <tr>
+        <td><label>Rata-Rata</label></td>
+        <td>=</td>
+        <td><label id="rata_rata"></label></td>
+    </tr>
+</table>
+<br>
+<input type="button" id="btn" value="Rata-Rata" class="btn" onClick="Ratarata()">
+</div>
+<script>
+  function InputData(Bilangan){
+    var data;
+      data = parseFloat(document.getElementById(Bilangan).value);
+    return data;
+  }
+
+  function Output(data){
+      document.getElementById("rata_rata").innerHTML = data;
+  }
+
+  function Ratarata(){
+    //Deklarasi Variable
+    var dat1,dat2,dat3,dat4,dat5,dat6,ratarata;
+    //Input
+    dat1  = InputData("UTS");
+    dat2  = InputData("Tugas");
+    dat3  = InputData("UAS");
+    //Proses
+    ratarata = Hitung(dat1,dat2,dat3);
+    //OutPut
+    Output(ratarata);
+  }
+
+</script>
+</body>
+</html>
+
+
+</body>
+</html>

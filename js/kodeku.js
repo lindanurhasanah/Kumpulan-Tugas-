@@ -1,0 +1,1 @@
+alert("Hello Ini dari External JavaScript");

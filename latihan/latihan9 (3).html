@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+</head>
+<body>
+ 
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		header{
+			background:#3097af;
+			padding:10px;	
+			color:#fff;
+			font-family:"open sans";
+			overflow:hidden;
+			margin: 0;
+		}
+ 
+		.judul{
+			float: left;
+			margin: 0;
+		}
+ 
+		.menu{
+			position: fixed;
+			background: #f6f6f6;
+			color: #232323;			
+			height: 100%;
+			width: 200px;
+			top: 0;
+			left: -300px;
+			-webkit-transition: left 0.2s;
+			transition: left 0.2s;
+			padding: 20px;
+			border: 1px solid #ccc;			
+		}
+ 
+		.menu ul{
+			padding: 0;
+		}
+ 
+		.menu li{
+			list-style-type: none;
+			padding: 10px 0px;
+		}
+ 
+		.menu a{
+			color: #232323;
+			text-decoration: none;
+			font-size: 10pt;
+		}
+ 
+		.tombol{
+			float: right;
+			background: transparent;
+			padding: 10px;
+			color: #232323;
+			border: 1px solid #fff;
+			cursor: pointer;
+		}
+ 
+		.slide-menu-tampil{
+			left: 0 !important;
+		}
+	</style>
+ 
+	<header>
+		<h1 class="judul">Perusahaan Clothing</h1>
+ 
+		<button class="tombol">MENU</button>
+ 
+		<nav class="menu">    
+			<h4>Menu</h4>
+			<ul>
+				<li><a href="Beranda.html">Beranda</a></li>
+    <li><a href="Produk.html">Produk</a></li>
+    <li><a href="Tentang.html">Tentang</a></li>
+    <li><a href="Kontak.html">Kontak</a></li>
+    
+			</ul>
+		</nav>
+	</header>
+    <center><img src="gambar14.jpg"></center>
+    <h3>Perusahaan ini menyediakan berbagai macam pakaian mewah,soal harga jangan ditanya
+        sudah jelas perusahaan ini memberi harga yang sangat terjangkau.Jadi ayo berbelanja di perusahaan kami
+        untuk pembeli pertama kami beri diskon.
+    </h3>
+
+ 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.tombol').click(function(){
+				$('.menu').toggleClass("slide-menu-tampil");
+			});
+		});
+	</script>
+    <body background="gambar13.jpg">
+</body>
+</html>
